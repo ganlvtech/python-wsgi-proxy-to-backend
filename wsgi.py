@@ -1,9 +1,4 @@
-from myapp import application
-
-
-class WSGIHandler(object):
-    def __call__(self, environ, start_response):
-        return application(environ, start_response)
+from myapp import WSGIHandler
 
 
 def get_wsgi_application():
